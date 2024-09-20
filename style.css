@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+    --mainColor: rgb(3, 132, 63);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ccc;
 }
 
 .main-container{
@@ -16,7 +24,7 @@
 }
 
 header{
-    background-color: #ccc;
+    background-color: gray;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -26,7 +34,7 @@ header{
 .navbar-brand{
     font-size: 3rem;
     text-decoration: none;
-    color: rgb(3, 132, 63);
+    color: var(--mainColor);
     font-weight: 800;
 }
 
@@ -43,6 +51,10 @@ header{
 
 .col-md-8{
     width: 68%;
+}
+
+.btn{
+    background-color: var(--mainColor);
 }
 
 
